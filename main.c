@@ -7,6 +7,8 @@ typedef enum STATUS STATUS;
 typedef struct COORDINATES COORDINATES;
 typedef struct SNAKE SNAKE;
 
+srand(time(NULL));
+
 enum STATUS
 {
     UP, DOWN, RIGHT, LEFT, STOP
@@ -2057,7 +2059,6 @@ void ABOUT()
 
 int main()
 {
-    srand(time(NULL));
     SetConsoleTitle(" Snake Game Console");
     ShowCur(0);
     MENU(1);
